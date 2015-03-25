@@ -49,7 +49,7 @@ class ContributorsHooks {
 		}
 
 		$contributors = new Contributors( $title, $options );
-		return $contributors->getSimpleList( $parser->getFunctionLang() );
+		return array( $contributors->getNormalList( $parser->getFunctionLang() ), 'noparse' => true, 'isHTML' => true );
 	}
 
 	/**

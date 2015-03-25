@@ -274,8 +274,8 @@ class Contributors {
 		$listItems = array();
 		foreach ( $this->getContributors() as $username => $info ) {
 			list( $id, $count ) = $info;
-			$line = Linker::userLink( $id, $username ) . Linker::userToolLinks( $id, $username );
-			$line .= ' [' . $language->formatNum( $count ) . ']';
+			$line = Linker::userLink( $id, $username ) ;
+			$line .= '<span class="edit-counter"> ' . $language->formatNum( $count ) . '</span>';
 			$listItems[] = Html::rawElement( 'li', array(), $line );
 		}
 		return $listItems;
