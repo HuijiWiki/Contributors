@@ -274,7 +274,9 @@ class Contributors {
 		$listItems = array();
 		foreach ( $this->getContributors() as $username => $info ) {
 			list( $id, $count ) = $info;
-			$line = Linker::userLink( $id, $username ) ;
+			$avatar = new wAvatar($id, 's');
+			$line = $avatar->getAvatarURL();
+			$line .= Linker::userLink( $id, $username ) ;
 			$line .= '<span class="edit-counter"> ' . $language->formatNum( $count ) . '</span>';
 			$listItems[] = Html::rawElement( 'li', array(), $line );
 		}
