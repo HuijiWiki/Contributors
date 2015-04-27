@@ -49,6 +49,11 @@ $specialPageAliases['ba'] = array(
 	'Contributors' => array( 'Contributors' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'Contributors' => array( 'شرکت_کنۆک_ئان' ),
+);
+
 /** Banjar (Bahasa Banjar) */
 $specialPageAliases['bjn'] = array(
 	'Contributors' => array( 'Panyumbang' ),
@@ -74,6 +79,11 @@ $specialPageAliases['ce'] = array(
 	'Contributors' => array( 'Ахча_охьадуьхкарш' ),
 );
 
+/** Czech (čeština) */
+$specialPageAliases['cs'] = array(
+	'Contributors' => array( 'Přispěvatelé', 'Prispevatele' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'Contributors' => array( 'Autoren' ),
@@ -81,7 +91,7 @@ $specialPageAliases['de'] = array(
 
 /** Zazaki (Zazaki) */
 $specialPageAliases['diq'] = array(
-	'Contributors' => array( 'Dekerdoği' ),
+	'Contributors' => array( 'İştırakkeri' ),
 );
 
 /** Lower Sorbian (dolnoserbski) */
@@ -202,6 +212,11 @@ $specialPageAliases['lad'] = array(
 /** Luxembourgish (Lëtzebuergesch) */
 $specialPageAliases['lb'] = array(
 	'Contributors' => array( 'Auteuren' ),
+);
+
+/** لوری (لوری) */
+$specialPageAliases['lrc'] = array(
+	'Contributors' => array( 'هومیاریا' ),
 );
 
 /** Malagasy (Malagasy) */
