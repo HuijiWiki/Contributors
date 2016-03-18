@@ -70,13 +70,13 @@ class ContributorsHooks {
 	 * @var $skintemplate SkinTemplate
 	 */
 	public static function navigation( &$skintemplate, &$nav_urls, &$oldid, &$revid ) {
-		if ( $skintemplate->getTitle()->getNamespace() === NS_MAIN && $revid !== 0 ) {
-			$nav_urls['contributors'] = array(
-				'text' => $skintemplate->msg( 'contributors-toolbox' ),
-				'href' => $skintemplate->makeSpecialUrl( 'Contributors',
-					"target=" . wfUrlEncode( "{$skintemplate->thispage}" ) )
-			);
-		}
+		// if ( $skintemplate->getTitle()->getNamespace() === NS_MAIN && $revid !== 0 ) {
+		// 	$nav_urls['contributors'] = array(
+		// 		'text' => $skintemplate->msg( 'contributors-toolbox' ),
+		// 		'href' => $skintemplate->makeSpecialUrl( 'Contributors',
+		// 			"target=" . wfUrlEncode( "{$skintemplate->thispage}" ) )
+		// 	);
+		// }
 		return true;
 	}
 
@@ -84,7 +84,7 @@ class ContributorsHooks {
 	 * Output the toolbox link
 	 */
 	public static function toolbox( &$monobook ) {
-		if ( isset( $monobook->data['nav_urls']['contributors'] ) ) {
+		/*if ( isset( $monobook->data['nav_urls']['contributors'] ) ) {
 			if ( $monobook->data['nav_urls']['contributors']['href'] == '' ) {
 				?><li id="t-iscontributors"><?php echo $monobook->msg( 'contributors-toolbox' ); ?></li><?php
 			} else {
@@ -94,7 +94,7 @@ class ContributorsHooks {
 				echo $monobook->msg( 'contributors-toolbox' );
 						?></a><?php ?></li><?php
 			}
-		}
+		}*/
 		return true;
 	}
 }
