@@ -276,7 +276,7 @@ class Contributors {
 			list( $id, $count ) = $info;
 			$avatar = new wAvatar($id, 's');
 			$line = $avatar->getAvatarURL();
-			$line .= Linker::userLink( $id, $username ) ;
+			$line .= Linker::linkKnown( User::newFromId($id)->getUserPage(), $username, [], [], ['known', 'no-designation'] ) ;
 			$line .= '<span class="edit-counter"> ' . $language->formatNum( $count ) . '</span>';
 			$listItems[] = Html::rawElement( 'li', array(), $line );
 		}
